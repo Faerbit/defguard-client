@@ -488,6 +488,28 @@ type RootTranslation = {
 								 */
 								checkboxTitle: string
 							}
+							defaultInstance: {
+								/**
+								 * D​e​f​a​u​l​t​ ​i​n​s​t​a​n​c​e
+								 */
+								title: string
+								/**
+								 * T​h​e​ ​i​n​s​t​a​n​c​e​ ​t​h​a​t​ ​w​i​l​l​ ​b​e​ ​a​u​t​o​m​a​t​i​c​a​l​l​y​ ​c​o​n​n​e​c​t​e​d​ ​w​h​e​n​ ​t​h​e​ ​c​l​i​e​n​t​ ​i​s​ ​l​a​u​n​c​h​e​d​.
+								 */
+								helper: string
+								options: {
+									/**
+									 * N​o​n​e
+									 */
+									none: string
+								}
+							}
+							autoConnectMfa: {
+								/**
+								 * C​o​n​n​e​c​t​ ​M​F​A​ ​l​o​c​a​t​i​o​n​s​ ​o​n​ ​s​t​a​r​t​u​p
+								 */
+								title: string
+							}
 						}
 					}
 				}
@@ -2191,6 +2213,28 @@ export type TranslationFunctions = {
 								 * Check for updates
 								 */
 								checkboxTitle: () => LocalizedString
+							}
+							defaultInstance: {
+								/**
+								 * Default instance
+								 */
+								title: () => LocalizedString
+								/**
+								 * The instance that will be automatically connected when the client is launched.
+								 */
+								helper: () => LocalizedString
+								options: {
+									/**
+									 * None
+									 */
+									none: () => LocalizedString
+								}
+							}
+							autoConnectMfa: {
+								/**
+								 * Connect MFA locations on startup
+								 */
+								title: () => LocalizedString
 							}
 						}
 					}
